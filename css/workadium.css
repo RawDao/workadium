@@ -1,0 +1,154 @@
+﻿/*========== workadium.css 2018_03_09 global style ==========*/
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font: normal 16px Arial, sans-serif;
+}
+
+.container{
+	max-width: 1062px;
+	margin: 0 auto;
+}
+
+/*========== header style ==========*/
+
+.header{
+	background-color: #27273e;
+	padding: 12px 0;
+}
+
+.header .container{	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;	
+}
+
+.header__info_tel{
+	margin-bottom: 6px;
+}
+
+.header__info_tel a{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+.header__info_work{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+	text-decoration: underline;
+	color: #ec1e79;	
+}
+
+.header__info_work:hover{
+	color: rgba(93, 209, 248, 0.7);	
+}
+
+.header__info_work{
+	position: relative;
+}
+
+.header__info_worktime {
+	position: absolute;
+	left: 960px;
+}
+
+.header__info_work:hover .header__info_worktime{
+	left: 0px;
+	top: 32px;
+}
+
+/*========== main style ==========*/
+
+.container .main{
+	max-width: 888px;
+	margin-left: auto;
+}
+
+.main .main__nav{
+	padding: 12px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+}
+
+.main__nav a{
+	display: inline-block;
+	padding: 16px 32px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ec1e79;
+	font-weight: bold;
+}
+
+.main__nav .main__nav_price{
+	background: url('../images/work/main__nav_ico_price.png') left center no-repeat;
+}
+
+.main__nav .main__nav_price:hover{
+	background: url('../images/work/main__nav_ico_pricehover.png') left center no-repeat;
+	color: #221f1f;
+}
+
+.main__nav .main__nav_comm{
+	background: url('../images/work/main__nav_ico_comm.png') left center no-repeat;
+}
+
+.main__nav .main__nav_comm:hover{
+	background: url('../images/work/main__nav_ico_commhover.png') left center no-repeat;
+	color: #221f1f;
+}
+
+.main__nav .main__nav_active{
+	background: url('../images/work/main__nav_ico_workhover.png') left center no-repeat;
+	color: #221f1f;
+}
+
+.main__heading h1{
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;	
+	line-height: 560px;
+	background: url('../images/work/main__head_bg.jpg') center center no-repeat;
+	padding-left: 64px;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.main__heading h1:hover{
+	background: url('../images/work/main__head_bg_hover.jpg') center center no-repeat;	
+}
+
+/*========== main__content style ==========*/
+
+.main__content{
+	max-width: 704px;
+	margin-right: auto;
+}
