@@ -1,14 +1,40 @@
 ﻿/*========== workadium_intro.css 2018_03_06 global style ==========*/
 
+@font-face{
+  font-family: 'osc-bold';  
+  src: url('../fonts/OpenSansCondensed-Bold.ttf') format('truetype'); /* Safari, Android, iOS */       
+}
+
+@font-face{
+  font-family: 'osc-light';  
+  src: url('../fonts/OpenSansCondensed-Light.ttf') format('truetype'); /* Safari, Android, iOS */       	       
+}
+
+@font-face{
+  font-family: 'osc-lightitalic';  
+  src: url('../fonts/OpenSansCondensed-LightItalic.ttf') format('truetype'); /* Safari, Android, iOS */       
+}
+
+*, *::after, *::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 html{
 	height: 100%;
-	background: url('../images/intro/intro__html_bg.jpg') center center no-repeat #fff;
+	background: #fff url('../images/intro/intro__html_bg.jpg') center center no-repeat fixed;
 	background-size: auto auto;	
 }
 
 body{	
 	height: 100%;	
-	font: normal 16px/24px Arial, sans-serif;	
+	font: normal 16px/24px 'osc-light', sans-serif;	
 }
 
 /*========== main style ==========*/
@@ -36,8 +62,8 @@ body{
 
 .main__button{
 	display: inline-block;
-	font-size: 14px;
-	font-weight: bold;
+	font: bold 14px 'osc-bold', sans-serif;
+	letter-spacing: 3px;	
 	color: #ec1e79;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -50,4 +76,31 @@ body{
 .main__button:hover{
 	background-color: #ec1e79;
 	color: #fff;	
+}
+
+/*========== adaptive style ==========*/
+
+/* Large devices Desktops (более 1200px) */
+@media only screen and (min-width: 1201px) {
+
+}
+
+/* Medium devices Desktops (от 1200px до 993px) */
+@media only screen and ( min-width: 993px) and (max-width: 1200px) {
+	
+}
+
+/* Small devices Tablets (от 992px до 769px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Small devices Phones (от 768px до 481px) */
+@media only screen and  (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Extra small devices Phones (менее 480px) */
+@media only screen and (max-width: 480px) {
+
 }

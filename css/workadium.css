@@ -1,17 +1,24 @@
 ﻿/*========== workadium.css 2018_03_09 global style ==========*/
 
-*, *::after, *::before{
-	box-sizing: border-box;
+@font-face{
+  font-family: 'osc-bold';  
+  src: url('../fonts/OpenSansCondensed-Bold.ttf') format('truetype'); /* Safari, Android, iOS */       
 }
 
 @font-face{
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg') format('svg'); /* Legacy iOS */
+  font-family: 'osc-light';  
+  src: url('../fonts/OpenSansCondensed-Light.ttf') format('truetype'); /* Safari, Android, iOS */       	       
+}
+
+@font-face{
+  font-family: 'osc-lightitalic';  
+  src: url('../fonts/OpenSansCondensed-LightItalic.ttf') format('truetype'); /* Safari, Android, iOS */       
+}
+
+*, *::after, *::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 img{
@@ -20,7 +27,8 @@ img{
 }
 
 body{
-	font: normal 16px Arial, sans-serif;
+	font: normal 16px 'osc-light', sans-serif;	
+	color: #221f1f;
 }
 
 .container{
@@ -40,7 +48,7 @@ body{
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch;
 	align-content: stretch;	
 }
 
@@ -148,7 +156,242 @@ body{
 
 /*========== main__content style ==========*/
 
-.main__content{
+.main .main__content{
+	font: normal 18px/30px 'osc-light', sans-serif;
 	max-width: 704px;
 	margin-right: auto;
+	margin-bottom: 64px;
+}
+
+.main__content p, .main__content_ul li{
+	margin-bottom: 14px;
+}
+
+.main__content .main__content_par2{
+	font-family: 'osc-bold';
+}
+
+.main__content_ul{
+	list-style-type: none;	
+}
+
+.main__content_ul li:before{
+	display: inline-block;
+	margin: 0 14px 4px 18px;
+	content: "";
+	width: 5px;
+	height: 5px;
+	background-color: #ec1e79;
+	border-radius: 50%;
+}
+
+.main__content .main__content_par4{
+	color: #fff;
+	background-color: #27273e;
+}
+
+.main__content .main__content_par4{
+	padding: 12px 30px;	
+}
+
+.main__content .main__content_par4 strong{
+	color: #ec1e79;
+}
+
+/*========== main__partners style ==========*/
+
+.main .main__partners{
+	max-width: 704px;
+	margin-right: auto;	
+}
+
+.main__partners h2{
+	font-size: 48px;
+	margin-bottom: 48px;
+}
+
+.main__partners_top, .main__partners_bottom{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+	margin-bottom: 62px;
+}
+
+.main__partners a{
+	display: inline-block;
+	min-height: 64px;
+}
+
+.main__top01, .main__top02, .main__top03, .main__bottom01, .main__bottom02, .main__bottom03{
+	flex: 1 0 auto;	
+}
+
+.main__top01{
+	background: url('../images/work/main__partners01.png') left center no-repeat;
+}
+
+.main__top01:hover{
+	background: url('../images/work/main__partners01_hover.png') left center no-repeat;
+}
+
+.main__top02{	
+	background: url('../images/work/main__partners02.png') center center no-repeat;
+}
+
+.main__top02:hover{	
+	background: url('../images/work/main__partners02_hover.png') center center no-repeat;
+}
+
+.main__top03{	
+	background: url('../images/work/main__partners03.png') right center no-repeat;
+}
+
+.main__top03:hover{	
+	background: url('../images/work/main__partners03_hover.png') right center no-repeat;
+}
+
+.main__bottom01{	
+	background: url('../images/work/main__partners04.png') left center no-repeat;
+}
+
+.main__bottom01:hover{	
+	background: url('../images/work/main__partners04_hover.png') left center no-repeat;
+}
+
+.main__bottom02{	
+	background: url('../images/work/main__partners05.png') center center no-repeat;
+}
+
+.main__bottom02:hover{	
+	background: url('../images/work/main__partners05_hover.png') center center no-repeat;
+}
+
+.main__bottom03{	
+	background: url('../images/work/main__partners06.png') 78% center no-repeat;
+}
+
+.main__bottom03:hover{	
+	background: url('../images/work/main__partners06_hover.png') 78% center no-repeat;
+}
+
+/*========== footer style ==========*/
+
+.footer{
+	background-color: #27273e;
+	padding: 12px 0;
+	color: #fff;
+}
+
+.footer .container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.footer__author, .footer__logo, .footer__social{
+	flex: 0 0 288px;
+}
+
+.footer__author{
+	font: normal 14px 'osc-light', sans-serif;	
+	color: #fff;
+}
+
+.footer__author_par1 a{	
+	font-weight: bold;
+	font-family: 'osc-bold', sans-serif;
+	color: #fff;
+}
+
+.footer__author_par2 a{	
+	font-weight: bold;
+	font-family: 'osc-bold', sans-serif;
+	text-decoration: none;
+	color: #fff;	
+}
+
+.footer__social_par1{
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.footer__social_icon .footer__icon{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 4px;
+}
+
+.footer__social_icon .footer__vk{
+	background: url('../images/work/footer__ico_vk.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__vk:hover{
+	background: url('../images/work/footer__ico_vk_hover.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__fb{
+	background: url('../images/work/footer__ico_fb.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__fb:hover{
+	background: url('../images/work/footer__ico_fb_hover.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__google{
+	background: url('../images/work/footer__ico_google.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__google:hover{
+	background: url('../images/work/footer__ico_google_hover.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__tw{
+	background: url('../images/work/footer__ico_tw.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__tw:hover{
+	background: url('../images/work/footer__ico_tw_hover.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__rss{
+	background: url('../images/work/footer__ico_rss.png') center center no-repeat;
+}
+
+.footer__social_icon .footer__rss:hover{
+	background: url('../images/work/footer__ico_rss_hover.png') center center no-repeat;
+}
+
+/*========== adaptive style ==========*/
+
+/* Large devices Desktops (более 1200px) */
+@media only screen and (min-width: 1201px) {
+
+}
+
+/* Medium devices Desktops (от 1200px до 993px) */
+@media only screen and ( min-width: 993px) and (max-width: 1200px) {
+	
+}
+
+/* Small devices Tablets (от 992px до 769px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Small devices Phones (от 768px до 481px) */
+@media only screen and  (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Extra small devices Phones (менее 480px) */
+@media only screen and (max-width: 480px) {
+
 }

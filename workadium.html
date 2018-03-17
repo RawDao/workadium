@@ -3,23 +3,23 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>workadium</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="author" content="" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<link rel="icon" href="favicon.ico" />
-	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/normalize.css"/>
 	<link rel="stylesheet" href="css/workadium.css"/>	
 </head>	
 <body>	
 	<div class="header">
 		<div class="container">
-			<img src="images/work/header__logo.png" alt="header__logo"/>
+			<a href="#"><img src="images/work/header__logo.png" alt="header__logo"/></a>
 			<div class="header__info">
 				<div class="header__info_tel">
 					<a href="tel:+88000039210">8 (800) 00-392-10</a>
@@ -47,43 +47,56 @@
 				<h1>О компании</h1>
 			</div>
 			<div class="main__content">
-				<p>
+				<p class="main__content_par1">
 					Чтобы работать в дружелюбной и уютной атмосфере, не обязательно снимать 
 					офис за баснословные суммы. Обратитесь в наш коворкинг &#0171;Воркадиум&#0187; и 
 					оцените преимущества сотрудничества. 
 				</p>
-				<p>Что мы предлагаем:</p>
-				<div>
-					<ul>	
+				<p class="main__content_par2">Что мы предлагаем:</p>
+				<ul class="main__content_ul">
+					<li>	
 						Огромный конференц-зал на 120 человек для проведения массовых переговоров, 
 						праздников, совещаний.
-					</ul>
-					<ul>Средний конференц-зал на 40 человек.</ul>
-					<ul>Уютный зал с круглым столом для совещаний на 12 человек </ul>
-					<ul>
+					</li>
+					<li>Средний конференц-зал на 40 человек.</li>
+					<li>Уютный зал с круглым столом для совещаний на 12 человек </li>
+					<li>
 						Пространство для совместной работы. Несколько вариантов – от уютных небольших 
 						кабинетов с панорамными окнами и стильных офисов на несколько человек до 
 						творческих комнат в стиле лофт с высокими потолками, без привычных атрибутов офиса.
-					</ul>
-					<ul>Большая библиотека с классической и специальной литературой.</ul>
-					<ul>Магазин канцелярии.</ul>
-					<ul>Компьютерный зал.</ul>
-					<ul>Зал для неформальных встреч с баром и кальяном.</ul>
-				</div>
-				<p>
+					</li>
+					<li>Большая библиотека с классической и специальной литературой.</li>
+					<li>Магазин канцелярии.</li>
+					<li>Компьютерный зал.</li>
+					<li>Зал для неформальных встреч с баром и кальяном.</li>
+				</ul>
+				<p class="main__content_par3">
 					Возможность комфортно работать и с удобством организовывать бизнес встречи – это базовая 
 					потребность современного делового человека. В уютных залах &#0171;Воркадиум&#0187; есть все, что 
 					нужно для ведения дел – переговорные столы, тумбы и шкафы для хранения документов, 
 					компьютерная техника, а также уютный ресторан для дружеских встреч.
 				</p>
-				<p>
+				<p class="main__content_par4">
 					Для наших новых клиентов мы предлагаем <strong>скидку 50%</strong> на первый 
 					день! Приходите, чтобы лично оценить преимущества коворкинга &#0171;Воркадиум&#0187;!
 				</p>
 			</div>
+			<!-- end div main__content-->
+			
 			<div class="main__partners">
-				
+				<h2>Партнеры</h2>
+				<div class="main__partners_top">
+					<a class="main__top01" href="#"></a>
+					<a class="main__top02" href="#"></a>
+					<a class="main__top03" href="#"></a>
+				</div>
+				<div class="main__partners_bottom">
+					<a class="main__bottom01" href="#"></a>
+					<a class="main__bottom02" href="#"></a>
+					<a class="main__bottom03" href="#"></a>
+				</div>
 			</div>
+			<!-- end div main__partners -->
 		</div>
 		<!-- end div main -->
 	</div>
@@ -91,12 +104,36 @@
 	
 	<div class="footer">
 		<div class="container">
+			<div class="footer__author">
+				<p class="footer__author_par1">
+					Сделано с любовью и старанием на курсе &#0171;HTML + CSS&#0187; 
+					в <a href="https://loftschool.com/" target="_blank">LoftSchool.</a>
+				</p>
+				<p class="footer__author_par2">
+					Верстка: <a href="mailto:rawdao101@rambler.ru">RawDao</a>	
+				</p>
+			</div>
 			
+			<div class="footer_logo">
+				<a href="#"><img src="images/work/footer__logo.png" alt="footer__logo"/></a>
+			</div>
+			
+			<div class="footer__social">
+				<p class="footer__social_par1">
+					Наши социальные сети
+				</p>
+				<div class="footer__social_icon">
+					<a class="footer__icon footer__vk" href="#"></a>
+					<a class="footer__icon footer__fb" href="#"></a>
+					<a class="footer__icon footer__google" href="#"></a>
+					<a class="footer__icon footer__tw" href="#"></a>
+					<a class="footer__icon footer__rss" href="#"></a>
+				</div>
+			</div>
 		</div>
 		<!-- end div container -->
 	</div>
-	<!-- end div footer -->
-		
+	<!-- end div footer -->		
 	
 	<script src="js/workadium_scr.js"></script>
 </body>
