@@ -49,6 +49,70 @@
 	color: #221f1f;
 }
 
+/*========== main__breadcrumbs style ==========*/
+
+.main__breadcrumbs{
+	margin-bottom: 24px;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.main__breadcrumbs a{
+	display: inline-block;	
+}
+
+.main__breadcrumbs_home{
+	color: #ec1e79;
+}
+
+.main__breadcrumbs_home:hover{
+	color: #221f1f;
+}
+
+.main__breadcrumbs_prices{
+	text-decoration: none;
+	color: #221f1f;
+}
+
+/*========== main__prices_h2 style ==========*/
+
+.main__prices_h2 h2{
+	font: bold 48px 'osc-bold', sans-serif;
+	margin-bottom: 40px;
+}
+
+/*========== main__prices style ==========*/
+
+.main__price_top, .main__price_bottom{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	text-align: center;
+}
+
+.main__top_sec, .main__bottom_sec{
+	flex: 0 0 250px;
+}
+
+.main__top_sec img, .main__bottom_sec img{
+	display: inline-block;
+	margin-bottom: 24px;
+}
+
+.main__top_sec h4, .main__bottom_sec h4{
+	font: bold 18px 'osc-bold', sans-serif;
+	margin-bottom: 14px;
+}
+
+.main__top_sec p, .main__bottom_sec p{
+	font-size: 14px;
+	line-height: 22px; 
+	margin-bottom: 44px;
+}
+
 /*========== adaptive style ==========*/
 
 /* Large devices Desktops (более 1200px) */

@@ -9,7 +9,7 @@
 
 .main .main__nav{
 	padding: 12px 0;
-	margin-bottom: 38px;
+	//margin-bottom: 38px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -75,6 +75,13 @@
 	color: #221f1f;
 }
 
+/*========== main__comments_h2 style ==========*/
+
+.main__comments_h2 h2{
+	font: bold 48px 'osc-bold', sans-serif;
+	margin-bottom: 40px;
+}
+
 /*========== main__comm style ==========*/
 
 .main__comm{
@@ -88,13 +95,14 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	align-content: stretch;
-	padding: 28px 0;
+	padding-bottom: 28px;
+	margin-bottom: 28px;
 	border-bottom: 2px solid #f5f5f5;
 }
 
 .main__comm_img{
 	border-radius: 50%;
-	margin: 0 20px 0 20px;
+	margin: 0 20px 20px 0;
 	transition: all 0.4s;
 }
 

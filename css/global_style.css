@@ -107,12 +107,13 @@ body{
 }
 
 .footer__author, .footer__logo, .footer__social{
-	flex: 0 0 288px;
+	//flex: 0 0 288px;
 }
 
 .footer__author{
 	font: normal 14px 'osc-light', sans-serif;	
 	color: #fff;
+	flex: 0 0 224px; 
 }
 
 .footer__author_par1 a{	
@@ -134,6 +135,14 @@ body{
 	font-size: 14px;
 	letter-spacing: 1px;
 	margin-bottom: 8px;
+}
+
+.footer__logo{
+	flex: 0 0 100px;
+}
+
+.footer__social_icon{
+	flex: 0 0 170px;
 }
 
 .footer__social_icon .footer__icon{
